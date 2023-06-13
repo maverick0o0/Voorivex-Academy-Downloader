@@ -1,6 +1,6 @@
 # Voorivex-Academy-Downloader
 
-A Python script to download videos from the voorivex.academy website. Due to limitations on the website, it is not possible to download multiple videos simultaneously. This script allows you to download the videos one by one using the site's API and Internet Download Manager for faster and easier downloads.
+A Python script to download videos from the voorivex.academy website. Due to limitations on the website, it is not possible to download multiple videos simultaneously. This script allows you to download the videos one by one using the site's API and Internet Download Manager for faster and easier downloads.Also you can you can download movies without IDM.
 
 ## Prerequisites
 
