@@ -9,7 +9,7 @@ import platform
 
 if platform.system() == 'Windows':
     from idm import IDMan
-    print("Running on windows")
+
 
 # TODO
 # Set connection speed
