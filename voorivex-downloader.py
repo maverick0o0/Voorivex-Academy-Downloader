@@ -1,9 +1,15 @@
 import time
-from idm import IDMan
+
 import requests
 import os
 from dotenv import dotenv_values
 
+
+import platform
+
+if platform.system() == 'Windows':
+    from idm import IDMan
+    print("Running on windows")
 
 # TODO
 # Set connection speed
@@ -194,7 +200,7 @@ def select_bearer():
     bearer_token = config["bearer_token"]
     if (bearer_token == ''):
         print("Please add your bearer token in .env")
-        exit
+        exit(1)
     return bearer_token
 
 
