@@ -217,6 +217,18 @@ def select_download_method():
         print("Invalid input. Please choose 1 or 2.")
         select_download_method()
 
+def select_key():
+    key_path = input(
+        "Which movies you want to download ? (Ta-lives , Yashar-lives , Last-stand-lives) : ")
+    
+    # Validate the key path
+    while not os.path.exists(key_path):
+        print("Invalid folder path. Please try again.")
+        key_path = input("Which movies you want to download ? (Ta-lives , Yashar-lives , Last-stand-lives) : ")
+
+    return key_path
+
+
 
 def main():
     global file_path
@@ -228,6 +240,8 @@ def main():
     file_path_to_save = select_folder()
     bearer_token = select_bearer()
     download_method = select_download_method()
+    key_path = select_key()
+    
 
     headers = {
         'Host': 'dl-api.voorivex.academy',
@@ -237,7 +251,7 @@ def main():
         'Authorization': f'Bearer {bearer_token}'
     }
 
-    with open('keys.txt', '+r') as file:
+    with open(key_path, '+r') as file:
         lines = file.readlines()
         for key in lines:
             filename = key.strip().split('/')[-1]
