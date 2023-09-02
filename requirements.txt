@@ -1,2 +1,3 @@
 idm
 python-dotenv
+requests

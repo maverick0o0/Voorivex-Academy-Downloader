@@ -13,6 +13,8 @@ regex_formats = {
     r"squidward/(.*?\.mp4)": "jiujitsu-hunters/00-groups/squidward/{}" ,
     r"000-lives\/(l.*?\.mp4)": "jiujitsu-hunters/000-lives/{}" ,
     r"0000-last-stand\/(L.*?\.mp4)": "jiujitsu-hunters/0000-last-stand/{}" ,
+    r"owasp-bonus\/(b.*?\.mp4)": "owasp-bonus/{}" ,
+    r"0-Lives\/(owasp.*?\.mp4)": "owasp-f/0-Lives/{}" ,
 }
 
 # Apply the regex patterns and store the results in a list
