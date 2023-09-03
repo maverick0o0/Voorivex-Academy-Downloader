@@ -219,7 +219,7 @@ def select_download_method():
 
 def select_key():
     key_path = input(
-        "Which movies you want to download ? (Ta-lives , Yashar-lives , Last-stand-lives) : ")
+        "Which movies you want to download ? (Look at Lives-Keys folder) :")
     
     # Validate the key path
     while not os.path.exists(key_path):
